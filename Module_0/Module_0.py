@@ -43,7 +43,7 @@ def game_core_v4(number):
     lim_upper = 101
     '''Данный цикл найдёт заданное на интервале число'''
     '''Убираем пробелы в сравнении согласно pep-8'''
-    while ((lim_upper-lim_lower)>1):
+    while ((lim_upper - lim_lower)>1):
         '''Исходим из того, что в счётчик идёт число циклов while, а не сравнений'''
         count += 1
         middle = (lim_lower + lim_upper) / 2
@@ -56,7 +56,7 @@ def game_core_v4(number):
         
         
 #Основной код для запуска проекта
-        def score_game(game_core):
+def score_game(game_core):
     '''Запускаем игру 1000 раз, чтобы узнать, как быстро игра угадывает число'''
     count_ls = []
     np.random.seed(1)  # фиксируем RANDOM SEED, чтобы ваш эксперимент был воспроизводим!
